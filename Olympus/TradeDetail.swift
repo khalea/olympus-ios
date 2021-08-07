@@ -40,7 +40,7 @@ struct TradeDetail: View {
                 
             Spacer()
         }
-        .navigationTitle(stock.ticker)
+        .navigationTitle(stock.symbol)
         .navigationBarTitleDisplayMode(.large)
         .padding(.horizontal)
         .frame(maxWidth: .infinity)
@@ -50,6 +50,6 @@ struct TradeDetail: View {
 
 struct TradeDetail_Previews: PreviewProvider {
     static var previews: some View {
-        TradeDetail(stock: BasicStock(ticker: "DOCN", contractName: "DOCN Call Option $55.00 Aug 20, 2021", strike: 55.00, close: 2.50))
+        TradeDetail(stock: BasicStock("DOCN", "DOCN Call Option $55.00 Aug 20, 2021", 55.00, 2.50))
     }
 }

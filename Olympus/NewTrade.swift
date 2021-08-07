@@ -14,6 +14,8 @@ struct NewTrade: View {
     
     var body: some View {
         VStack {
+            
+            // Search
             HStack {
                 TextField("ie. SQ, Twitter, etc", text: $ticker)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -26,6 +28,7 @@ struct NewTrade: View {
             }
             .padding(.horizontal)
             
+            // Pickers
             HStack {
                 Picker(selection: $contractType, label: Text("Contract Type"), content: {
                     Text("Call").tag(1)
@@ -39,6 +42,24 @@ struct NewTrade: View {
             }
             .padding(.horizontal)
             .pickerStyle(SegmentedPickerStyle())
+            
+            // Chain
+            
+            List(options) { option in
+                NavigationLink(destination: ContractDetail()) {
+                    HStack {
+                        VStack {
+                            Text("$"+String(format: "%.2f", option.strike)+" \(option.optionType)")
+                                .fontWeight(.bold)
+                        }
+                        Spacer()
+                        VStack {
+                            Text("$"+String(format: "%.2f", (option.bid+option.ask)/2))
+                        }
+                    }
+                    .padding()
+                }
+            }
             
             Spacer()
         }

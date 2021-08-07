@@ -15,7 +15,7 @@ struct Home: View {
                     NavigationLink(destination: TradeDetail(stock: item)) {
                         HStack {
                             VStack(alignment: .leading) {
-                                Text(item.ticker)
+                                Text(item.symbol)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.leading)
                                 Spacer()

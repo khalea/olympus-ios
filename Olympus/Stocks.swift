@@ -4,16 +4,17 @@
 //
 //  Created by Khalea Berry on 8/6/21.
 //
+// Adjust to Tradier data
 
 import Foundation
 
 
 
 let stocks = [
-    BasicStock(ticker: "DOCN", contractName: "DOCN Call Option $55.00 Aug 20, 2021", strike: 55.00, close: 2.50),
-    BasicStock(ticker: "AAPL", contractName: "AAPL Call Option $147.00 Aug 13, 2021", strike: 147.00, close: 96.00),
-    BasicStock(ticker: "SQ", contractName: "SQ Call Option $275.00 Aug 20, 2021", strike: 275.00, close: 8.75),
-    BasicStock(ticker: "AMD", contractName: "AMD Call Option $111.00 Sep 03, 2021", strike: 111.00, close: 5.35)
+    BasicStock("DOCN", "DOCN Call Option $55.00 Aug 20, 2021", 55.00, 2.50),
+    BasicStock("AAPL", "AAPL Call Option $147.00 Aug 13, 2021", 147.00, 96.00),
+    BasicStock("SQ", "SQ Call Option $275.00 Aug 20, 2021", 275.00, 8.75),
+    BasicStock("AMD", "AMD Call Option $111.00 Sep 03, 2021", 111.00, 5.35)
 ]
 
 /**
@@ -21,13 +22,13 @@ let stocks = [
  */
 struct BasicStock: Codable, Identifiable {
     var id = UUID()
-    var ticker: String
+    var symbol: String
     var contractName: String
     var strike: Float
     var close: Float
     
-    init(ticker: String, contractName: String, strike: Float, close: Float) {
-        self.ticker = ticker
+    init(_ symbol: String, _ contractName: String, _ strike: Float, _ close: Float) {
+        self.symbol = symbol
         self.contractName = contractName
         self.strike = strike
         self.close = close

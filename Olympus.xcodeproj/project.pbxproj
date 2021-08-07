@@ -14,6 +14,8 @@
 		2F21776626BDF4A4008B3729 /* NewTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21776526BDF4A4008B3729 /* NewTrade.swift */; };
 		2F21776926BDF507008B3729 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21776826BDF507008B3729 /* Stocks.swift */; };
 		2F21776B26BDFE23008B3729 /* TradeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21776A26BDFE23008B3729 /* TradeDetail.swift */; };
+		2F2A380926BF062800EF41C7 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A380826BF062800EF41C7 /* Options.swift */; };
+		2F2A380B26BF1B1900EF41C7 /* ContractDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A380A26BF1B1900EF41C7 /* ContractDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2F21776526BDF4A4008B3729 /* NewTrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrade.swift; sourceTree = "<group>"; };
 		2F21776826BDF507008B3729 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		2F21776A26BDFE23008B3729 /* TradeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeDetail.swift; sourceTree = "<group>"; };
+		2F2A380826BF062800EF41C7 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		2F2A380A26BF1B1900EF41C7 /* ContractDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				2F21776326BDF49C008B3729 /* Home.swift */,
 				2F21776526BDF4A4008B3729 /* NewTrade.swift */,
 				2F21776A26BDFE23008B3729 /* TradeDetail.swift */,
+				2F2A380A26BF1B1900EF41C7 /* ContractDetail.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2F21776826BDF507008B3729 /* Stocks.swift */,
+				2F2A380826BF062800EF41C7 /* Options.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -172,9 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F21776426BDF49C008B3729 /* Home.swift in Sources */,
+				2F2A380B26BF1B1900EF41C7 /* ContractDetail.swift in Sources */,
 				2F21775126BDF450008B3729 /* OlympusApp.swift in Sources */,
 				2F21776926BDF507008B3729 /* Stocks.swift in Sources */,
 				2F21776B26BDFE23008B3729 /* TradeDetail.swift in Sources */,
+				2F2A380926BF062800EF41C7 /* Options.swift in Sources */,
 				2F21776626BDF4A4008B3729 /* NewTrade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
