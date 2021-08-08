@@ -8,9 +8,29 @@
 import SwiftUI
 
 struct NewTrade: View {
+    // Input
     @State private var ticker: String = ""
+    // Underlying Price — For ITM/OTM section divider
+    @State private var underlyingPrice: Float = 54.10
+    
+    // Segmented Pickers
     @State private var contractType: Int = 0
     @State private var buySell: Int = 0
+    // Custom Segmented Picker Style
+    enum orderType: String, CaseIterable {
+        case call = "Call"
+        case put = "Put"
+    }
+    enum orderSide: String, CaseIterable {
+        case buy = "Buy"
+        case sell = "Sell"
+    }
+    
+    init() {
+        UISegmentedControl.appearance().selectedSegmentTintColor = .systemGreen
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.black], for: .selected)
+    }
+    
     
     var body: some View {
         VStack {
@@ -55,6 +75,7 @@ struct NewTrade: View {
                         Spacer()
                         VStack {
                             Text("$"+String(format: "%.2f", (option.bid+option.ask)/2))
+                            
                         }
                     }
                     .padding()
