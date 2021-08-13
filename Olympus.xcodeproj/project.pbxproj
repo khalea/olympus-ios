@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0587D726C46B6200A864D1 /* ContractModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F0587D526C46B6200A864D1 /* ContractModel.xcdatamodeld */; };
+		2F0587D926C58D4700A864D1 /* OptionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0587D826C58D4700A864D1 /* OptionsProvider.swift */; };
 		2F21775126BDF450008B3729 /* OlympusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21775026BDF450008B3729 /* OlympusApp.swift */; };
 		2F21775526BDF453008B3729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F21775426BDF453008B3729 /* Assets.xcassets */; };
 		2F21775826BDF453008B3729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F21775726BDF453008B3729 /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0587D626C46B6200A864D1 /* ContractModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContractModel.xcdatamodel; sourceTree = "<group>"; };
+		2F0587D826C58D4700A864D1 /* OptionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsProvider.swift; sourceTree = "<group>"; };
 		2F21774D26BDF450008B3729 /* Olympus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olympus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F21775026BDF450008B3729 /* OlympusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlympusApp.swift; sourceTree = "<group>"; };
 		2F21775426BDF453008B3729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			children = (
 				2F21776826BDF507008B3729 /* Stocks.swift */,
 				2F2A380826BF062800EF41C7 /* Options.swift */,
+				2F0587D526C46B6200A864D1 /* ContractModel.xcdatamodeld */,
+				2F0587D826C58D4700A864D1 /* OptionsProvider.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F21776426BDF49C008B3729 /* Home.swift in Sources */,
+				2F0587D726C46B6200A864D1 /* ContractModel.xcdatamodeld in Sources */,
 				2F2A380B26BF1B1900EF41C7 /* ContractDetail.swift in Sources */,
+				2F0587D926C58D4700A864D1 /* OptionsProvider.swift in Sources */,
 				2F21775126BDF450008B3729 /* OlympusApp.swift in Sources */,
 				2F21776926BDF507008B3729 /* Stocks.swift in Sources */,
 				2F21776B26BDFE23008B3729 /* TradeDetail.swift in Sources */,
@@ -370,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F0587D526C46B6200A864D1 /* ContractModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F0587D626C46B6200A864D1 /* ContractModel.xcdatamodel */,
+			);
+			currentVersion = 2F0587D626C46B6200A864D1 /* ContractModel.xcdatamodel */;
+			path = ContractModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2F21774526BDF450008B3729 /* Project object */;
 }
